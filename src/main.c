@@ -231,7 +231,7 @@ int32_t main() {
                 }
             }) {
 				/* I19C Implementation */
-                char *greetings_text = T (lang_ctx, "GREETING");
+				char *greetings_text = T (lang_ctx, "GREETING", "Dynamic variable");
                 Clay_String greetings = {
                     .chars = greetings_text,
                     .length = strlen(greetings_text)
